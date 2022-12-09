@@ -1,38 +1,50 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #000;
+  /* background-image: url('./images/large_hair_image.png'); */
+  /* background-repeat: no-repeat;  */
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #fff;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cursive {
+  color: #fcb900;
+  /* color: floralwhite;  */
+  font-family: Vladimir Script;
+  font-weight: 500;
+}
+/* 
+#period{
+  color: #fff;
+} */
+
+.nav-link {
+  text-decoration: none;
+  color: floralwhite; 
+  text-transform: uppercase;
+  margin-right: 25px;
+  /* animation: 10s slide-up; */
+  transition: all 0.5s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .nav-link.active{
+  color: red;
+} */
+
+.nav-link:hover {
+  color: #fcb900;
+  text-decoration: underline;
+  font-size: large;
+  /* background-color: #fff; */
 }
+
+.nav-link.active {
+  color: #fcb900;
+  text-decoration: underline;
+  /* font-size: large; */
+}
+
+/* .nav-link.inactive {
+  font-style: italic;
+} */

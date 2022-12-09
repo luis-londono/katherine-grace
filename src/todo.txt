@@ -1,0 +1,11 @@
+- Mobile
+- React router
+    https://www.codingame.com/playgrounds/6517/react-router-tutorial
+
+https://unsplash.com/s/photos/hair-salon
+https://curly.qodeinteractive.com/
+https://v5.reactrouter.com/web/api/NavLink
+
+
+skyline salon
+the salonkc
