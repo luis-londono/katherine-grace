@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
   background-color: #000;
@@ -6,9 +8,33 @@
   min-height: 100vh;
   color: #fff;
   justify-content: center;
+  overflow: hidden;
+}
+  
+.row.header{
+  padding-top: 24px;
 }
 
-.cursive {
+.col-md-6.navigation{
+  padding-top: 10px;
+}
+
+.col-md-2.navigation{
+  padding-top: 10px;
+  color: #fff;
+}
+
+a.social{
+  color: floralwhite;
+}
+
+a:hover{
+  color: #fcb900 !important;
+  /* text-decoration: none !important; */
+}
+
+#cursive {
+  padding-top: 10px;
   color: #fcb900;
   /* color: floralwhite;  */
   font-family: Vladimir Script;
@@ -40,11 +66,12 @@
 }
 
 .nav-link.active {
-  color: #fcb900;
-  text-decoration: underline;
+  color: #fcb900 !important;
+  text-decoration: underline !important;
   /* font-size: large; */
 }
 
 /* .nav-link.inactive {
   font-style: italic;
 } */
+

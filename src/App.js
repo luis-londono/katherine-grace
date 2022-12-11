@@ -1,11 +1,13 @@
-import './App.css';
-import Header  from './Header';
+import React  from 'react';
+import "./App.css";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
-        <Header />
-        <h1 className="cursive">Katherine Grace Hair <span id="period">•</span> Est 2015</h1>
+      <Header />
+      <Footer />
     </div>
   );
 }
