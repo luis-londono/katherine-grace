@@ -3,9 +3,9 @@ import React from "react";
 const Services = () => {
   return (
     <>
-      <h2>Salon Services</h2>
+      <h2 style={{ marginBottom: "24px"}}>Salon Services</h2>
 
-      <h3 style={{ textDecoration: "underline" }}>Cuts & Styling</h3>
+      <h3 style={{ color:"seashell", textDecoration: "underline" }}>Cuts & Styling</h3>
       <table style={{ display: "inline-table" }}>
         <tr>
           <td>Men's Cut</td>
@@ -21,7 +21,7 @@ const Services = () => {
         </tr>
       </table>
 
-      <h3 style={{ textDecoration: "underline" }}>Color</h3>
+      <h3 style={{ color:"seashell", textDecoration: "underline", marginTop: "10px" }}>Color</h3>
       <table style={{ display: "inline-table" }}>
         <tr>
           <td>Single Process</td>
@@ -36,6 +36,29 @@ const Services = () => {
           <td>$150</td>
         </tr>
       </table>
+
+      <h3 style={{ color:"seashell", textDecoration: "underline", marginTop: "10px" }}>Extras</h3>
+      <table style={{ display: "inline-table" }}>
+        <tr>
+          <td>Brow Wax</td>
+          <td />
+          <td>$15</td>
+        </tr>
+        <tr>
+          <td>Lip Wax</td>
+          <td />
+          <td>$5</td>
+        </tr>
+      </table>
+
+      {/* <div className="test">
+        <div className="row">
+          <div className="col-md-3"></div>
+          <div className="col-md-3">Test</div>
+          <div className="col-md-3">Test</div>
+        </div>
+      </div> */}
+
     </>
   );
 };

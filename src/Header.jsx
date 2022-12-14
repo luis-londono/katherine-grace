@@ -12,6 +12,7 @@ import logo from "../src/images/logo.png";
 function Header() {
   return (
     <>
+      
       <div className="row header">
         <div className="col-md-3">
           <img id="logo" src={logo} alt="logo"></img>
@@ -41,7 +42,6 @@ function Header() {
             </ul>
           </nav>
         </div>
-
         <div className="col-md-2 navigation">
           <a
             className="social"
@@ -61,12 +61,11 @@ function Header() {
             rel="noreferrer"
           >
             <i class="fa fa-instagram" aria-hidden="true"></i>
-           
           </a>
           &nbsp;
           <a
             className="social"
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/katie.godbey.1"
             target="_blank"
             without="true"
             rel="noreferrer"
@@ -77,10 +76,10 @@ function Header() {
       </div>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/gallery" element={<Gallery />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/credits" element={<Credits />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/about" element={<About />} />
+        {/* <Route path="/credits" element={<Credits />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>

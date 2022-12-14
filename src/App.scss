@@ -1,48 +1,54 @@
 
+$black: #000;
+$black-lighter: #232b2b;
+$white: #fff;
+$gold: #fcb900;
+$floral-white: floralwhite;
 
 .App {
   text-align: center;
-  background-color: #000;
+  background-color: $black;
   /* background-image: url('./images/large_hair_image.png'); */
   /* background-repeat: no-repeat;  */
   min-height: 100vh;
-  color: #fff;
+  color: $floral-white;
   justify-content: center;
   overflow: hidden;
 }
   
 .row.header{
-  padding-top: 24px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }
 
 .col-md-6.navigation{
-  padding-top: 10px;
+  margin-top: 10px;
 }
 
 .col-md-2.navigation{
-  padding-top: 10px;
-  color: #fff;
+  margin-top: 10px;
+  color: $white;
 }
 
 a.social{
-  color: floralwhite;
+  color: $floral-white;
 }
 
 a:hover{
-  color: #fcb900 !important;
+  color: $gold !important;
   /* text-decoration: none !important; */
 }
 
 #cursive {
   padding-top: 10px;
-  color: #fcb900;
+  color: $gold;
   /* color: floralwhite;  */
   font-family: Vladimir Script;
   font-weight: 500;
 }
 /* 
 #period{
-  color: #fff;
+  color: $white;
 } */
 
 .nav-link {
@@ -59,14 +65,14 @@ a:hover{
 } */
 
 .nav-link:hover {
-  color: #fcb900;
+  color: $gold;
   text-decoration: underline;
   font-size: large;
-  /* background-color: #fff; */
+  /* background-color: $white; */
 }
 
 .nav-link.active {
-  color: #fcb900 !important;
+  color: $gold !important;
   text-decoration: underline !important;
   /* font-size: large; */
 }
@@ -75,3 +81,28 @@ a:hover{
   font-style: italic;
 } */
 
+/* Pictures */
+
+#engagement{
+  border-radius: 25px;
+  animation: fadeIn 5s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+// ABOUT // 
+
+.emoji{
+  font-size: 2.5rem;
+}
+.about-wrapper{
+  margin-top: 40px
+}
+
+.about-description{
+  padding-top: 25px;
+  /* padding-left: 70px !important; */
+}
