@@ -1,11 +1,17 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-    return (
-        <>
-            <h2 id="cursive">Katherine Grace Hair <span id="period">•</span> Est 2015</h2>
-        </>
-    );
+  const year = new Date().getFullYear();
+  return (
+    <>
+      <div className="footer">
+        <h2 id="cursive">
+          Katherine Grace Hair <span id="period">•</span> Est 2015
+        </h2>
+        <p>&copy; {year} All Rights Reserved</p>
+      </div>
+    </>
+  );
 };
 
 export default Footer;
