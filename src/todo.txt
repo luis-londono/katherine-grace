@@ -1,3 +1,11 @@
+TODO
+  - Hamburger menu close when resize
+  - Refactor css
+  - Add Icons
+
+EXTRA STUFF
+
+
 - Mobile
 - React router
     https://www.codingame.com/playgrounds/6517/react-router-tutorial
@@ -21,3 +29,44 @@ Need Hours, Location, Contact
 <i class="mkdf-icon-font-awesome fa fa-bars"></i>
 
 https://www.google.com/search?q=hamburger+menu+when+small+screen&source=lmns&tbm=vid&bih=746&biw=1536&rlz=1C1ONGR_enUS997US997&hl=en&sa=X&ved=2ahUKEwjjxvqa6qL8AhWI8ckDHTLrAEUQ_AUoAnoECAEQAg#fpstate=ive&vld=cid:832bdb05,vid:ydZc17rlR5E
+
+https://www.youtube.com/watch?v=P3W7MZ3JkyA
+
+google create logo
+
+
+      {/* <div className="test">
+        <div className="row">
+          <div className="col-md-3"></div>
+          <div className="col-md-3">Test</div>
+          <div className="col-md-3">Test</div>
+        </div>
+      </div> */}
+
+      
+  // let param = useParams()
+  // console.log(window.location.pathname.replace('/',''));
+
+const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  
+  if (windowWidth > 750)
+    setIsMobile(false)
+  // console.log(windowWidth)
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    }
+  }, []);
+
+
+https://stackoverflow.com/questions/41131450/active-link-with-react-router
+
+    https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html
+
