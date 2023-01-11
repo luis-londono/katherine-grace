@@ -1,10 +1,15 @@
 import React from "react";
+// import { useParams } from "react-router-dom";
 // import logo from './images/logo.png'
 import salon_2 from './images/salon.avif';
 
 const Home = () => {
+
+
   return (
     <>
+
+      
 
         {/* <p>home, home on the range 🦬</p> */}
         {/* <img className="salon" src={salon_2} alt="salon"></img> */}
