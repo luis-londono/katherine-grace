@@ -1,10 +1,11 @@
 TODO
   - Hamburger menu close when resize
-  - Refactor css
-  - Add Icons
+  - Add Icons to footer
+  - onClick updating isMobile on link
+
+
 
 EXTRA STUFF
-
 
 - Mobile
 - React router
