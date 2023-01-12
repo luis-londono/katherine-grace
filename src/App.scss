@@ -349,6 +349,7 @@ a.home {
     top: 75px;
     transition: all 0.5x ease-out;
     width: 100%;
+    min-height: 100vh;
   }
 
   .home,
@@ -357,7 +358,7 @@ a.home {
   .about {
     color: white;
     text-align: center;
-    padding: 32px;
+    padding: 0px;
     width: 100%;
     transition: all 0.5x ease-out;
   }
