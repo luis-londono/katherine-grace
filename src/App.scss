@@ -148,6 +148,7 @@ a:hover {
 a.home,
 a.services,
 a.gallery,
+a.schedule,
 a.about {
   margin-right: 25px;
   text-decoration: none;
@@ -155,6 +156,10 @@ a.about {
   text-transform: uppercase;
   // margin-right: 25px;
   transition: all 0.5s ease-out;
+}
+
+a.schedule{
+  display: none;
 }
 
 a.home.active,
@@ -297,7 +302,7 @@ a.home {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 75px;
+    // height: 75px;
   }
 
   .cursive-logo {
@@ -314,7 +319,7 @@ a.home {
     list-style: none;
     position: absolute;
     left: 0;
-    top: 75px;
+    // top: 75px;
     transition: all 0.5x ease-out;
     width: 100%;
   }
@@ -336,7 +341,12 @@ a.home {
     min-height: 100vh;
   }
 
+// .schedule{
+//   display: block !important;
+// }
+
   .home,
+  .schedule,
   .services,
   .gallery,
   .about {
@@ -347,12 +357,19 @@ a.home {
     transition: all 0.5x ease-out;
   }
 
+
   a.home.active,
+  a.schedule,
   a.services.active,
   a.gallery.active,
   a.about.active {
     color: $gold !important;
     border-bottom: none;
+  }
+  
+  a.schedule {
+    display: initial;
+    color: white !important; //need to fix this
   }
 
   .mobile-menu-icon {
@@ -369,10 +386,6 @@ a.home {
 
   #engagement {
     animation: none;
-  }
-
-  .navigation-wrapper {
-    margin-bottom: 125px;
   }
 
   .icons {

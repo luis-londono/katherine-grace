@@ -4,6 +4,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
   const navigate = useNavigate();
+  const schedule = 'https://na0.meevo.com/OnlineBookingApp/login?locationId=105198&tenantId=102418'
 
   return (
     <>
@@ -20,6 +21,9 @@ const Navigation = () => {
               <NavLink to="/" className="home">
                 <li>Home</li>
               </NavLink>
+              <a href={schedule} className="schedule">
+                <li>Schedule Now</li>
+              </a>
               <NavLink to="/services" className="services">
                 <li>Services</li>
               </NavLink>
