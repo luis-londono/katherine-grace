@@ -1,6 +1,21 @@
 @import "colors";
 @import url(//db.onlinewebfonts.com/c/01a1cdebb8bf5b8573622fa6f689369c?family=Vladimir+Script);
 
+@font-face {
+  font-family: "Vladimir Script";
+  src: url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.eot");
+  src: url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/01a1cdebb8bf5b8573622fa6f689369c.svg#Vladimir Script")
+      format("svg");
+}
+
 .App {
   text-align: center;
   background-color: $black;
@@ -43,7 +58,7 @@ a:hover {
   padding-top: 10px;
   color: $gold;
   /* color: floralwhite;  */
-  font-family: Vladimir Script;
+  font-family: "Vladimir Script";
   font-weight: 500;
   margin-bottom: 1rem;
 }
@@ -53,7 +68,7 @@ a:hover {
   padding-left: 24px;
   padding-top: 10px;
   color: $gold;
-  font-family: Vladimir Script;
+  font-family: "Vladimir Script";
   font-weight: 500;
   cursor: pointer;
 }
@@ -303,7 +318,7 @@ a.home {
 
   .cursive-logo {
     color: $gold;
-    font-family: Vladimir Script;
+    font-family: "Vladimir Script";
     font-weight: 500;
   }
 
@@ -318,12 +333,6 @@ a.home {
     top: 75px;
     transition: all 0.5x ease-out;
     width: 100%;
-  }
-
-  .cursive-logo {
-    color: $gold;
-    font-family: Vladimir Script;
-    font-weight: 500;
   }
 
   .nav-links {
