@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 // import { useParams } from "react-router-dom";
 // import logo from './images/logo.png'
-import salon_2 from './images/salon.avif';
+// import salon_2 from './images/salon.avif';
 
 const Home = () => {
 const [width, setWidth] = useState(window.innerWidth)
@@ -16,12 +16,12 @@ useEffect(() => {
   window.addEventListener("resize", updateWindowDimensions);
 });
 
-
+// console.log(width + "px")
 
   return (
     <>
 
-      <p>width: {width}px</p>
+      {/* <p>width: {width}px</p> */}
 
         {/* <p>home, home on the range 🦬</p> */}
         {/* <img className="salon" src={salon_2} alt="salon"></img> */}
