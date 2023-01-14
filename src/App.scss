@@ -164,6 +164,7 @@ a.about.active {
 }
 
 .nav-links-mobile {
+  --tw-bg-opacity: 1;
   display: inline-flex;
   margin-right: 0px;
   padding-left: 0px;
@@ -367,7 +368,7 @@ a.home {
     text-align: center;
     padding: 0px;
     width: 100%;
-    transition: all 0.5x ease-out;
+    // transition: all 0.5x ease-out;
   }
 
 
