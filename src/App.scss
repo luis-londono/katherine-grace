@@ -1,5 +1,9 @@
 @import "colors";
 
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
   background-color: $black;
@@ -45,17 +49,18 @@ a:hover {
   font-family: 'Brush Script MT', cursive;
   font-weight: 500;
   margin-bottom: 1rem;
+  cursor: pointer;
+  user-select: none;
 }
 
 .cursive-logo {
   font-size: 30px;
-  padding-left: 24px;
+  padding-left: 70px;
   padding-top: 10px;
   color: $gold;
   font-family: 'Brush Script MT', cursive;
   font-weight: 500;
   cursor: pointer;
-  user-select: none;
 }
 
 .salon {
@@ -69,39 +74,18 @@ a:hover {
   left: 16px;
 }
 
-/* Top left text */
-.top-left {
-  position: absolute;
-  top: 8px;
-  left: 16px;
-}
-
-/* Top right text */
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-}
-
-/* Bottom right text */
-.bottom-right {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-}
-
-/* Centered text */
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 @keyframes type {
   from {
     width: 0;
   }
+}
+
+.navigation-wrapper{
+
+  border-bottom: solid;
+  border-color: $gold;
+  // padding-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .navbar {
@@ -110,6 +94,7 @@ a:hover {
   align-items: center;
   height: 75px;
   color: white;
+
 }
 
 .nav-link {
@@ -168,9 +153,14 @@ a.services.active,
 a.gallery.active,
 a.about.active {
   color: $gold !important;
-  border-bottom: solid;
+  // border-bottom: solid;
   border-color: $gold;
   border-width: thin;
+}
+
+.icons{
+  text-align: end;
+  padding-right: 70px;
 }
 
 .nav-links-mobile {
@@ -292,9 +282,28 @@ a.home {
   }
 }
 
+// TABLET
+@media screen and (max-width: 1420px) {
+
+  // .navigation-wrapper{
+  //   padding-bottom: 20px
+  // }
+  .navigation-wrapper{
+
+    border-bottom: none;
+  }
+}
+
+
 //  MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 766px) {
+  .navigation-wrapper{
+    border-bottom: solid;
+    border-color: $gold;
+    padding-bottom: 0px
+  }
+
   .nav-link {
     width: 100%;
   }
@@ -310,6 +319,7 @@ a.home {
     color: $gold;
     font-family: 'Brush Script MT', cursive;
     font-weight: 500;
+    padding-left:30px;
   }
 
   .nav-mobile {
@@ -340,6 +350,8 @@ a.home {
     transition: all 0.5x ease-out;
     width: 100%;
     min-height: 100vh;
+    border-top: solid;
+    border-color: $gold;
   }
 
 // .schedule{

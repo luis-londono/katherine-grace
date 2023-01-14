@@ -4,7 +4,7 @@ import Carolina from './images/carolina.jpg';
 const Gallery = () => {
     return (
         <div>
-            <p>pics go here</p>
+            <h2 style={{ marginBottom: "24px" }}>Images</h2>
             <img id="carolina" src={Carolina} alt="carolina"></img>
         </div>
     );

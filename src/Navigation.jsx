@@ -10,10 +10,12 @@ const Navigation = () => {
     <>
       <div className="row navigation-wrapper">
         <nav className="navbar">
-          <div className="col-lg-2 col-md-2">
-            <h2 className="cursive-logo" onClick={() => navigate('/')}>Katherine Grace Hair</h2>
+          
+          <div className="col-lg-4 col-md-3 ">
+            <h2 className="cursive-logo float-start" onClick={() => navigate('/')}>Katherine Grace Hair</h2>
           </div>
-          <div className="col-lg-6 col-md-6">
+
+          <div className="col-lg-4 col-md-6">
             <ul
               className={isMobile ? "nav-links-mobile" : "nav-links"}
               onClick={() => setIsMobile(!isMobile)}
@@ -45,7 +47,8 @@ const Navigation = () => {
               )}
             </button>
           </div>
-          <div className="col-lg-2 col-md-2 icons">
+
+          <div className="col-lg-4 col-md-3 icons">
 
           <a
             className="social"
