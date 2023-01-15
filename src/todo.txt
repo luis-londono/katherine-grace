@@ -71,3 +71,4 @@ https://stackoverflow.com/questions/41131450/active-link-with-react-router
 
     https://www.w3docs.com/snippets/css/how-to-vertically-align-text-next-to-an-image.html
 
+https://blog.duda.co/responsive-google-maps-for-your-website
