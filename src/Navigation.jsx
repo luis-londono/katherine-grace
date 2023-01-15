@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
+import Icons from "./Icons";
 
 const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -35,6 +36,9 @@ const Navigation = () => {
               <NavLink to="/about" className="about">
                 <li>About</li>
               </NavLink>
+              <NavLink to="/contact" className="contact">
+                <li>Contact</li>
+              </NavLink>
             </ul>
             <button
               className="mobile-menu-icon"
@@ -49,38 +53,9 @@ const Navigation = () => {
           </div>
 
           <div className="col-lg-4 col-md-3 icons">
-
-          <a
-            className="social"
-            href="mailto:kglondono@gmail.com"
-            target="_blank"
-            without="true"
-            rel="noreferrer"
-          >
-            <i className="fa fa-envelope" aria-hidden="true"></i>
-          </a>
-          &nbsp;
-          <a
-            className="social"
-            href="https://www.instagram.com/ktgodberry/"
-            target="_blank"
-            without="true"
-            rel="noreferrer"
-          >
-            <i className="fa fa-instagram" aria-hidden="true"></i>
-          </a>
-          &nbsp;
-          <a
-            className="social"
-            href="https://www.facebook.com/katie.godbey.1"
-            target="_blank"
-            without="true"
-            rel="noreferrer"
-          >
-            <i className="fa fa-facebook" aria-hidden="true"></i>
-          </a>
-
+            <Icons className="navigation-social" />
           </div>
+          
         </nav>
       </div>
     </>

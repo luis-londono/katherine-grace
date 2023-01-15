@@ -12,14 +12,17 @@ const Services = () => {
         <tbody>
           <tr>
             <td>Men's Cut</td>
+            <td>&nbsp;&nbsp;</td>
             <td>$45</td>
           </tr>
           <tr>
             <td>Women's Cut</td>
+            <td>&nbsp;&nbsp;</td>
             <td>$55</td>
           </tr>
           <tr>
             <td>Shampoo/Blowout</td>
+            <td>&nbsp;&nbsp;</td>
             <td>$47</td>
           </tr>
         </tbody>
@@ -38,14 +41,17 @@ const Services = () => {
         <tbody>
           <tr>
             <td>Single Process</td>
+            <td>&nbsp;&nbsp;</td>
             <td>$85</td>
           </tr>
           <tr>
             <td>Partial Highlight</td>
+            <td>&nbsp;&nbsp;</td>
             <td>$115</td>
           </tr>
           <tr>
             <td>Full Highlight</td>
+            <td>&nbsp;&nbsp;</td>
             <td>$150</td>
           </tr>
         </tbody>
@@ -64,12 +70,12 @@ const Services = () => {
         <tbody>
           <tr>
             <td>Brow Wax</td>
-            <td />
+            <td>&nbsp;&nbsp;</td>
             <td>$15</td>
           </tr>
           <tr>
             <td>Lip Wax</td>
-            <td />
+            <td>&nbsp;&nbsp;</td>
             <td>$5</td>
           </tr>
         </tbody>

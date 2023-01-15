@@ -27,7 +27,7 @@
   // color: $white;
 }
 
-a.social {
+a.navigation-social {
   color: $floral-white;
 }
 
@@ -135,7 +135,8 @@ a.home,
 a.services,
 a.gallery,
 a.schedule,
-a.about {
+a.about,
+a.contact {
   margin-right: 25px;
   text-decoration: none;
   color: floralwhite;
@@ -151,7 +152,8 @@ a.schedule{
 a.home.active,
 a.services.active,
 a.gallery.active,
-a.about.active {
+a.about.active,
+a.contact.active {
   color: $gold !important;
   // border-bottom: solid;
   border-color: $gold;
@@ -182,7 +184,8 @@ a.about.active {
 a.home,
 a.services,
 a.gallery,
-a.about {
+a.about,
+a.contact {
   margin-right: 25px;
   text-decoration: none;
   color: floralwhite;
@@ -363,7 +366,8 @@ a.home {
   .schedule,
   .services,
   .gallery,
-  .about {
+  .about
+  .contact {
     color: white;
     text-align: center;
     padding: 0px;
@@ -376,7 +380,8 @@ a.home {
   a.schedule,
   a.services.active,
   a.gallery.active,
-  a.about.active {
+  a.about.active,
+  a.contact.active {
     color: $gold !important;
     border-bottom: none;
   }

@@ -5,6 +5,8 @@ import Gallery from "./Gallery";
 import Services from "./Services";
 import NotFound from "./NotFound";
 import { Routes, Route } from "react-router-dom";
+import Contact from "./Contact";
+
 
 const Routing = () => {
   return (
@@ -14,6 +16,7 @@ const Routing = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </>
