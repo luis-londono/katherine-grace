@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import next from './images/next.png';
 
 const Home = () => {
-// const [width, setWidth] = useState(window.innerWidth)
+const [width, setWidth] = useState(window.innerWidth)
 
 
 
@@ -17,7 +17,7 @@ useEffect(() => {
   window.addEventListener("resize", updateWindowDimensions);
 });
 
-// console.log(width + "px")
+console.log(width + "px")
 
   return (
     <>
