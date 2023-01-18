@@ -218,6 +218,13 @@ a.home {
   animation: fadeIn 5s;
 }
 
+#next{
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+  // padding: 0px 12px 0px 12px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
