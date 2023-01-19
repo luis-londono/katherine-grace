@@ -5,7 +5,8 @@ import React, { useEffect, useState } from "react";
 // import next from './images/next.png';
 // import scrunch from './images/scrunch.png'
 // import brush from './images/brush.png'
-import sunflower from './images/sunflower.png'
+// import sunflower from './images/sunflower.png'
+import utensils from './images/utensils.png'
 
 const Home = () => {
 const [width, setWidth] = useState(window.innerWidth)
@@ -31,7 +32,7 @@ console.log(width + "px")
       {/* <img id="fabu" src={fabu} alt="fabu"></img> */}
       {/* <img className="home-img" src={scrunch} alt="scrunch"></img>  */}
       {/* <img className="home-img" src={brush} alt="brush"></img>  */}
-      <img className="home-img" src={sunflower} alt="sunflower"></img> 
+      <img className="home-img" src={utensils} alt="utensils"></img> 
     </>
   );
 };
