@@ -47,7 +47,7 @@ a:hover {
   padding-top: 10px;
   color: $gold;
   /* color: floralwhite;  */
-  font-family: 'Brush Script MT', cursive;
+  // font-family: 'Brush Script MT', cursive;
   font-weight: 500;
   margin-bottom: 1rem;
   cursor: pointer;
@@ -59,7 +59,7 @@ a:hover {
   padding-left: 70px;
   padding-top: 10px;
   color: $gold;
-  font-family: 'Brush Script MT', cursive;
+  // font-family: 'Brush Script MT', cursive;
   font-weight: 500;
   cursor: pointer;
 }
@@ -316,7 +316,7 @@ a.home {
 
 //  MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 900px) {
   .navigation-wrapper{
     border-bottom: solid;
     border-color: $gold;
@@ -336,7 +336,7 @@ a.home {
 
   .cursive-logo {
     color: $gold;
-    font-family: 'Brush Script MT', cursive;
+    // font-family: 'Brush Script MT', cursive;
     font-weight: 500;
     padding-left:30px;
   }
