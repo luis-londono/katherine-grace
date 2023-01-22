@@ -24,8 +24,7 @@ const About = () => {
             the text goes here. Testing the tell all stuff. All of the text goes
             here. Testing the tell all stuff. All of the text goes here. Testing
             the tell all stuff. All of the text goes here. Testing the tell all
-            stuff. All of the text goes here. Testing the tell all stuff. All of
-            the text goes here. 💇‍♀️
+            stuff. All of the text goes here. 💇‍♀️
           </div>
         </div>
         </div>
