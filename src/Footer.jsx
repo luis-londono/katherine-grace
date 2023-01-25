@@ -1,6 +1,6 @@
 import React from "react";
 import Icons from "./Icons";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
