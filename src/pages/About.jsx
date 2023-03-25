@@ -1,5 +1,5 @@
 import React from "react";
-import Engagement from "./images/katherine-engagement-small.jpg";
+import Engagement from "../images/katherine-engagement-small.jpg"
 
 const About = () => {
   return (

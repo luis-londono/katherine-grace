@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
-import Routing from "./Routing";
+import Routing from "../Routing";
 
 function Header() {
   return (

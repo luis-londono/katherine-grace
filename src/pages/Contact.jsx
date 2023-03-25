@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import Frame from './Frame'
+import Frame from '../components/Frame'
 
 const Contact = () => {
   const iframeRef = useRef(null);

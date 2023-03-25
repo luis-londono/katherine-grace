@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { createPortal } from "react-dom";
-import Spinner from "./Spinner";
+import Spinner from "../components/Spinner";
 
 const Frame = ({ children, ...props }) => {
   const [contentRef, setContentRef] = useState(null);
@@ -11,7 +11,7 @@ const Frame = ({ children, ...props }) => {
 
   return (
     <>
-      <iframe {...props} ref={setContentRef}>
+      <iframe {...props} ref={setContentRef} title={"bijin"}>
         {contentRef == null ? <Spinner /> : null}
         {contentRef ? createPortal(children, mountNode) : <Spinner />}
       </iframe>

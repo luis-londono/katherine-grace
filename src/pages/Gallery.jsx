@@ -1,5 +1,5 @@
 import React from 'react';
-import Carolina from './images/carolina.jpg';
+import Carolina from '../images/carolina.jpg';
 
 const Gallery = () => {
     return (

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import Icons from "./Icons";
+import Icons from "../components/Icons";
 
 const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -24,7 +24,7 @@ const Navigation = () => {
               <NavLink to="/" className="home">
                 <li>Home</li>
               </NavLink>
-              <a href={schedule} className="schedule">
+              <a href={schedule} className="test schedule">
                 <li>Schedule Now</li>
               </a>
               <NavLink to="/services" className="services">
