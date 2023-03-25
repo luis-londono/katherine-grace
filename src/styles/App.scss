@@ -18,7 +18,7 @@
 }
 
 .loader {
-  border: 8px solid #f3f3f3;
+  border: 8px solid $red;
   border-top: 8px solid $gold;
   border-radius: 50%;
   width: 60px;
@@ -68,7 +68,7 @@ a:hover {
   font-size: 20px;
   padding-top: 10px;
   color: $gold;
-  /* color: floralwhite;  */
+  /* color: $floral-white;  */
   // font-family: 'Brush Script MT', cursive;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -116,13 +116,13 @@ a:hover {
   justify-content: space-around;
   align-items: center;
   height: 75px;
-  color: white;
+  color: $white;
 
 }
 
 .nav-link {
   text-decoration: none;
-  color: floralwhite;
+  color: $floral-white;
   text-transform: uppercase;
   margin-right: 25px;
   transition: all 0.5s ease-out;
@@ -150,8 +150,6 @@ a:hover {
 .nav-link:hover {
   color: $gold;
   font-size: large;
-  // text-decoration: underline;
-  /* background-color: $white; */
 }
 
 a.home,
@@ -162,7 +160,7 @@ a.about,
 a.contact {
   margin-right: 25px;
   text-decoration: none;
-  color: floralwhite;
+  color: $floral-white;
   text-transform: uppercase;
   // margin-right: 25px;
   transition: all 0.5s ease-out;
@@ -211,7 +209,7 @@ a.about,
 a.contact {
   margin-right: 25px;
   text-decoration: none;
-  color: floralwhite;
+  color: $floral-white;
   text-transform: uppercase;
   transition: all 0.5s ease-out;
 }
@@ -238,7 +236,7 @@ a.home {
   max-width: 100%;
   flex-basis: 70%;
   border-radius: 25px;
-  animation: fadeIn 5s;
+  // animation: fadeIn 5s;
 }
 
 #next{
@@ -405,7 +403,7 @@ a.home {
   .gallery,
   .about
   .contact {
-    color: white;
+    color: $white;
     text-align: center;
     padding: 0px;
     width: 100%;
@@ -425,14 +423,14 @@ a.home {
   
   a.schedule {
     display: initial;
-    color: white !important; //need to fix this
+    color: $white !important; //need to fix this
   }
 
   .mobile-menu-icon {
     display: block;
     position: absolute;
     font-size: 30px;
-    color: white;
+    color: $white;
     background-color: transparent;
     border: none;
     outline: none;
