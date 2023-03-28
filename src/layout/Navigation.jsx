@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
   // const [navigationIsOpen, setNavigationIsOpen] = useState(false);
 
-  const [navigationOpen, setNavigationOpen] = React.useContext(AppContext);
+  const [, setNavigationOpen] = React.useContext(AppContext);
 
   const navigate = useNavigate();
   const schedule =
