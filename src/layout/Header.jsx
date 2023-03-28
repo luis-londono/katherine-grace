@@ -2,7 +2,8 @@ import React from "react";
 import Navigation from "./Navigation";
 import Routing from "../Routing";
 
-function Header() {
+const Header = () => {
+
   return (
     <>
       <Navigation />

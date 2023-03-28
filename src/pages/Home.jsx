@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
+import { AppContext } from "../AppContext";
 import utensils from "../images/utensils.png";
+
 const Home = () => {
+  const [navigationOpen] = React.useContext(AppContext);
   const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -15,9 +18,13 @@ const Home = () => {
 
   return (
     <>
-      {/* <p>width: {width}px</p> */}
+      {!navigationOpen && (
+        <>
+          {/* <p>width: {width}px</p> */}
 
-      <img className="home-img" src={utensils} alt="utensils"></img>
+          <img className="home-img" src={utensils} alt="utensils"></img>
+        </>
+      )}
     </>
   );
 };

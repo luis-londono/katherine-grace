@@ -1,8 +1,10 @@
 import React from "react";
 import Icons from "../components/Icons";
 import { useNavigate } from "react-router-dom";
+// import { AppContext } from "../AppContext";
 
 const Footer = () => {
+  // const value = React.useContext(AppContext);  
   const year = new Date().getFullYear();
   const navigate = useNavigate();
 
@@ -15,6 +17,9 @@ const Footer = () => {
         <p>&copy; {year} All Rights Reserved</p>
 
         <Icons className="footer-social" />
+
+          {/* <h2>{value}</h2> */}
+
       </div>
     </>
   );

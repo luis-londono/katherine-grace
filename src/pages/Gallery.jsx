@@ -1,13 +1,20 @@
-import React from 'react';
-import Carolina from '../images/carolina.jpg';
+import React from "react";
+import { AppContext } from "../AppContext";
+import Carolina from "../images/carolina.jpg";
 
 const Gallery = () => {
-    return (
+  const [navigationOpen] = React.useContext(AppContext);
+
+  return (
+    <>
+      {!navigationOpen && (
         <div>
-            <h2 style={{ marginBottom: "24px" }}>Images</h2>
-            <img id="carolina" src={Carolina} alt="carolina"></img>
+          <h2 style={{ marginBottom: "24px" }}>Images</h2>
+          <img id="carolina" src={Carolina} alt="carolina"></img>
         </div>
-    );
+      )}
+    </>
+  );
 };
 
 export default Gallery;
