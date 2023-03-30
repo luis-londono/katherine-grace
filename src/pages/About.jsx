@@ -6,7 +6,7 @@ const About = () => {
   // const value = React.useContext(AppContext);
   const [navigationOpen] = React.useContext(AppContext);
 
-  // console.log(value)
+  console.log(navigationOpen)
 
   return (
     <>

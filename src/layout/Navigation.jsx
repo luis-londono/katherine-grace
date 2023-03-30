@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
   // const [navigationIsOpen, setNavigationIsOpen] = useState(false);
 
-  const [, setNavigationOpen] = React.useContext(AppContext);
+  const [navigationOpen, setNavigationOpen] = React.useContext(AppContext);
 
   const navigate = useNavigate();
   const schedule =
@@ -15,12 +15,18 @@ const Navigation = () => {
 
   const handleHamburgerClick = () => {
     setIsMobile(!isMobile);
-    setNavigationOpen(false);
+    setNavigationOpen(!isMobile);
   };
 
   const handleNavigationClick = () => {
     setIsMobile(!isMobile);
     setNavigationOpen(false);
+  };
+
+  const handleLogoClick = () => {
+    setIsMobile(!isMobile);
+    setNavigationOpen(false);
+    navigate("/");
   };
 
   return (
@@ -30,7 +36,7 @@ const Navigation = () => {
           <div className="col-lg-4 col-md-5 ">
             <h2
               className="cursive-logo float-start"
-              onClick={() => navigate("/")}
+              onClick={() => handleLogoClick()}
             >
               Katherine Grace Hair
             </h2>
@@ -59,6 +65,31 @@ const Navigation = () => {
               <NavLink to="/contact" className="contact">
                 <li>Contact</li>
               </NavLink>
+
+              {/* trying to add mobile navigation */}
+              {/* {(isMobile && navigationOpen) && (
+                <li>
+                  <a
+                    className="contact"
+                    href="mailto:kglondono@gmail.com"
+                    target="_blank"
+                    without="true"
+                    rel="noreferrer"
+                  >
+                    <i className="fa fa-envelope" aria-hidden="true"></i>
+                  </a>
+                  &nbsp;
+                  <a
+                    className="contact"
+                    href="https://www.instagram.com/ktgodberry/"
+                    target="_blank"
+                    without="true"
+                    rel="noreferrer"
+                  >
+                    <i className="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </li>
+              )} */}
             </ul>
             <button className="mobile-menu-icon" onClick={handleHamburgerClick}>
               {isMobile ? (
