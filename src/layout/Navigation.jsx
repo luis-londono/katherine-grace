@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import Icons from "../components/Icons";
 import { AppContext } from "../AppContext";
+import Footer from "./Footer";
 
 const Navigation = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -65,6 +66,12 @@ const Navigation = () => {
               <NavLink to="/contact" className="contact">
                 <li>Contact</li>
               </NavLink>
+
+              {/* {isMobile && (
+                <li>
+                  <Footer />
+                </li>
+              )} */}
 
               {/* trying to add mobile navigation */}
               {/* {(isMobile && navigationOpen) && (

@@ -9,7 +9,7 @@ const Gallery = () => {
     <>
       {!navigationOpen && (
         <div>
-          <h2 style={{ marginBottom: "24px" }}>Images</h2>
+          <h2 style={{ marginBottom: "24px" }}>Gallery</h2>
           <img id="carolina" src={Carolina} alt="carolina"></img>
         </div>
       )}
