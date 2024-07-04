@@ -1,7 +1,6 @@
 // src/Map.js
 import { Loader } from "@googlemaps/js-api-loader";
 import React, { useEffect, useRef } from "react";
-import { GOOGLE_API_KEY } from "../Constants";
 
 const containerStyle = {
   width: "400px",
@@ -13,14 +12,14 @@ const center = {
   lng: -94.6315867173098
 };
 
-
+const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
 
 const Map = () => {
   const mapRef = useRef(null);
 
   useEffect(() => {
     const loader = new Loader({
-      apiKey: GOOGLE_API_KEY,
+      apiKey: googleApiKey,
       version: "beta", // Use the beta version to access AdvancedMarkerElement
     });
 
