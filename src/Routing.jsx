@@ -1,11 +1,11 @@
 import React from "react";
-import Home from "./pages/Home";
+import { Route, Routes } from "react-router-dom";
 import About from "./pages/About";
-import Gallery from "./pages/Gallery";
-import Services from "./pages/Services";
-import NotFound from "./pages/NotFound";
-import { Routes, Route } from "react-router-dom";
 import Contact from "./pages/Contact";
+import Gallery from "./pages/Gallery";
+import Home from "./pages/Home";
+import NotFound from "./pages/NotFound";
+import Services from "./pages/Services";
 
 
 const Routing = () => {

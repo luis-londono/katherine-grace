@@ -7,8 +7,6 @@ const Frame = ({ children, ...props }) => {
 
   const mountNode = contentRef;
 
-  // console.log(mountNode)
-
   return (
     <>
       <iframe {...props} ref={setContentRef} title={"bijin"}>
