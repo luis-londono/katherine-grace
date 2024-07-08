@@ -8,8 +8,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 39.00181570846621,
-  lng: -94.6315867173098
+  lat: 39.0017126671623,
+  lng: -94.63160456253793
 };
 
 const googleApiKey = process.env.REACT_APP_GOOGLE_API_KEY;
@@ -33,14 +33,13 @@ const Map = () => {
             zoom: 15,
           });
 
-          // Create an instance of AdvancedMarkerElement
-          // const marker = new google.maps.marker.AdvancedMarkerElement({
-          //   map,
-          //   position: center,
-          //   title: "Hello World!",
-          // });
+          const marker = new google.maps.Marker({
+            position: center,
+            map,
+            title: "Hello World!",
+          });
 
-          // marker.map = map;
+          marker.map = map;
         } else {
           console.error("Google Maps API not loaded properly.");
         }
