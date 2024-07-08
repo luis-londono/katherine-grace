@@ -34,13 +34,13 @@ const Map = () => {
           });
 
           // Create an instance of AdvancedMarkerElement
-          const marker = new google.maps.marker.AdvancedMarkerElement({
-            map,
-            position: center,
-            title: "Hello World!",
-          });
+          // const marker = new google.maps.marker.AdvancedMarkerElement({
+          //   map,
+          //   position: center,
+          //   title: "Hello World!",
+          // });
 
-          marker.map = map;
+          // marker.map = map;
         } else {
           console.error("Google Maps API not loaded properly.");
         }
