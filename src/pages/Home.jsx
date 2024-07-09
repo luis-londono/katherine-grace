@@ -19,9 +19,10 @@ const Home = () => {
 
   return (
     <>
+      {/* <h2>{width}</h2> */}
       {!navigationOpen && (
         <>
-          {width && width >= 400 ? (
+          {width && width >= 450 ? (
             <img className="home-img" src={utensils} alt="utensils"></img>
           ) : (
             <img className="home-img" src={utensilsMobile} alt="utensils"></img>
