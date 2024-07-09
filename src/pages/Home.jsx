@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AppContext } from "../AppContext";
 import utensils from "../images/utensils.png";
+import utensilsMobile from "../images/utensils-mobile.png";
 
 const Home = () => {
   const [navigationOpen] = React.useContext(AppContext);
@@ -14,15 +15,17 @@ const Home = () => {
     window.addEventListener("resize", updateWindowDimensions);
   });
 
-  console.log(width + "px");
+  // console.log(width + "px");
 
   return (
     <>
       {!navigationOpen && (
         <>
-          {/* <p>width: {width}px</p> */}
-
-          <img className="home-img" src={utensils} alt="utensils"></img>
+          {width && width >= 400 ? (
+            <img className="home-img" src={utensils} alt="utensils"></img>
+          ) : (
+            <img className="home-img" src={utensilsMobile} alt="utensils"></img>
+          )}
         </>
       )}
     </>

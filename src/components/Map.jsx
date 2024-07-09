@@ -1,6 +1,6 @@
-// src/Map.js
 import { Loader } from "@googlemaps/js-api-loader";
 import React, { useEffect, useRef } from "react";
+// import Marker from "../images/marker-primary.png"
 
 const containerStyle = {
   width: "400px",
@@ -36,7 +36,8 @@ const Map = () => {
           const marker = new google.maps.Marker({
             position: center,
             map,
-            title: "Hello World!",
+            title: "Marker",
+            // icon: Marker
           });
 
           marker.map = map;
